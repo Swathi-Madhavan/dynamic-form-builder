@@ -1,9 +1,15 @@
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home";
+import CustomAppBar from "./components/CustomAppBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <CustomAppBar />
+      <Outlet />
+    </div>
+  );
 }
 
 export default App;
